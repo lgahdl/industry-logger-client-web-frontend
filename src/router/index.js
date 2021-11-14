@@ -3,7 +3,7 @@ import VueRouter from 'vue-router'
 
 // Components
 import Device from '@/views/device'
-import EmptyPage from '@/views/pages/empty-page'
+import RedirectDevice from '@/views/pages/redirect-device'
 // Routes
 
 Vue.use(VueRouter)
@@ -16,7 +16,7 @@ const router = new VueRouter({
   },
   routes: [
     {
-      path: '/', name: 'home', component: EmptyPage, meta: { layout: 'full' },
+      path: '/', name: 'home', component: RedirectDevice, meta: { layout: 'full' },
     },
     {
       path: '/device/:macAddress', name: 'device', component: Device, meta: { layout: 'full' },
