@@ -4,6 +4,7 @@ import Vuex from 'vuex'
 // Modules
 import app from './app'
 import appConfig from './app-config'
+import deviceInfo from './device-info'
 import verticalMenu from './vertical-menu'
 
 Vue.use(Vuex)
@@ -12,6 +13,7 @@ export default new Vuex.Store({
   modules: {
     app,
     appConfig,
+    deviceInfo,
     verticalMenu,
   },
   strict: process.env.DEV,

@@ -11,13 +11,20 @@ import App from './App.vue'
 import './global-components'
 
 // 3rd party plugins
-import '@axios'
-import '@/libs/portal-vue'
+
+import '@/libs/bootstrap'
+import '@/libs/cleave'
 import '@/libs/clipboard'
-import '@/libs/toastification'
+import '@/libs/firebase'
+import '@/libs/perfect-scrollbar'
+import '@/libs/portal-vue'
+import '@/libs/ripple'
 import '@/libs/sweet-alerts'
-import '@/libs/vue-select'
+import '@/libs/toastification'
 import '@/libs/tour'
+import '@/libs/vee-validate'
+import '@/libs/vue-select'
+import '@/views/components/make-global'
 
 // BSV Plugin Registration
 Vue.use(ToastPlugin)

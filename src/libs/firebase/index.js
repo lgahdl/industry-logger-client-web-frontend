@@ -1,20 +1,18 @@
+// Import the functions you need from the SDKs you need
 import { initializeApp } from 'firebase/app'
-import { getAnalytics } from 'firebase/analytics'
-import { getAuth } from 'firebase/auth'
-import onAuthStateChangedFunction from '@/libs/firebase/functions'
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
+// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: 'AIzaSyDHq9a1Z-NWuvncnZybP1iayChOfHoKNxQ',
-  authDomain: 'telos-platform.firebaseapp.com',
-  projectId: 'telos-platform',
-  storageBucket: 'telos-platform.appspot.com',
-  messagingSenderId: '669394396008',
-  appId: '1:669394396008:web:929e79a3bc0a92ffc52cdd',
-  measurementId: 'G-CMXWWK8PP9',
+  apiKey: 'AIzaSyDV6fuPZcXo4sYTbaPvGved0e5ewTaBGqk',
+  authDomain: 'industry-logger.firebaseapp.com',
+  projectId: 'industry-logger',
+  storageBucket: 'industry-logger.appspot.com',
+  messagingSenderId: '910560229527',
+  appId: '1:910560229527:web:43646c61b2643e5ec891d2',
 }
 
-const firebase = initializeApp(firebaseConfig)
-const auth = getAuth()
-getAnalytics()
-auth.onAuthStateChanged(onAuthStateChangedFunction)
-export default firebase
+// Initialize Firebase
+const app = initializeApp(firebaseConfig)
+export default app
